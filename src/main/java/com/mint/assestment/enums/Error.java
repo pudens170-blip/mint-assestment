@@ -17,4 +17,9 @@ public enum Error {
 	public void setValue(String value) {
 		this.value = value;
 	}
+	
+	
+	
+
+	
 }
