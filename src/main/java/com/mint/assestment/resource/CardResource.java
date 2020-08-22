@@ -37,7 +37,7 @@ public class CardResource {
 	@Autowired
 	private CardPojo cardPojo;
 
-	private static final String TOPIC = "com.ng.vela.even.card_verify";
+	private static final String TOPIC = "com.ng.vela.even.card_verified";
 
 	@Autowired
 	private CardService cardService;
