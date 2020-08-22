@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>BIN Verification</title>
+<head th:replace="layout::stylesheet_ref">
+</head>
+<body>
+
+	<div class="container">
+		<div style="margin-top: 100px !important">
+			<form>
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+
+						<div class="col-md-8">
+							<div class="form-group">
+								<label><strong>Bank Identification Number<span
+										class="red">*</span></strong></label> <input type="text" class="form-control"
+									id="bin" name="bin" autofocus
+									placeholder="enter bank identification number">
+							</div>
+						</div>
+						<div class="col-md-4">
+
+							<input type="submit" required="required" id="searchCardInfoButton" class="btn btn-primary">
+
+						</div>
+					</div>
+
+					<div class="col-md-8 offset-md-2"
+						style="background-color: white !important; padding: 20px;">
+						<div class="table-responsive">
+							<table class=" table table-striped stable-bordered"
+								id="bin_table">
+								
+									<tr>
+										<th>BIN</th>
+										<th>Scheme</th>
+										<th>Card Type</th>
+										<th>Bank</th>
+
+									</tr>
+									
+
+							
+								
+							</table>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<br />
+	<br />
+
+</body>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div th:replace="layout::script_ref"></div>
+<script th:src="@{/assets/BINManagement/custom.js}"></script>
+
+</html>
